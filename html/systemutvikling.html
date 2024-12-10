@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Systemutvikling</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Navigasjons menyen på toppen-->
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="../index.html" class="logo"
+          >Systemutvikling</a >
+      </h1>
+      <ul class="nav-menu">
+        <li><a href="prosjektledelse_og_prosjektarbeid.html">Prosjektledelse og Prosjektarbeid</a></li>
+        <li><a href="systemutvikling.html">Systemutvikling</a></li>
+        <li><a href="webutvikling.html">Webutvikling og Ux</a></li>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <!-- Star wars kappene -->
+      <div class="theme-buttons">
+        <audio
+          id="lightsaberOffSound"
+          src="../assets/Lightsaber off sound effects.mp3"
+          preload="auto"
+        ></audio>
+        <audio
+          id="lightsaberOnSound"
+          src="../assets/Lightsaber Turn On - Sound Effect From Star Wars.mp3"
+          preload="auto"
+        ></audio>
+        <button id="normalModeButton" class="theme-button">Normal</button>
+        <button id="starWarsModeButton" class="theme-button">Star Wars</button>
+      </div>
+    </nav>
+
+    <!-- Hovedinnholdet -->
+    <div class="main-container">
+      <main class="content-container">
+        <section class="reading-content">
+          <!--Star wars crawl animasjon, gjør at teksten blir sendt oppover som i star wars filmene. Når animasjonen er fullført vises ikke innholdet lenger.
+          Blir gjort ved hjelp av CSS-->
+          <div class="crawl">
+            <h2>Hva er informasjonssystemer?</h2>
+            <img
+              src="../assets/informasjonssystemer.jpg"
+              alt="Illustrasjon av infosys"
+              class="infosys-bilde"
+            />
+            <p>
+              Et informasjonssystem er et sett med sammenhengende komponenter
+              som har som oppgave å samle inn data, behandle dataene, og
+              presentere resultatet. Informasjonssystemer er bygd opp av fem
+              grunnleggende komponenter:
+            </p>
+            <ul>
+              <li>
+                <strong>Maskinvare (hardware):</strong> De fysiske maskinene.
+              </li>
+              <li>
+                <strong>Programvare (software):</strong> Programmer som kjører
+                på maskinvaren.
+              </li>
+              <li>
+                <strong>Data:</strong> Informasjon som blir brukt av maskinvare
+                og programvare.
+              </li>
+              <li>
+                <strong>Mennesker:</strong> Brukere av maskinvare og
+                programvare.
+              </li>
+              <li>
+                <strong>Prosedyrer:</strong> Retningslinjer for hvordan systemet
+                skal brukes.
+              </li>
+            </ul>
+            <br />
+            <p>
+              Noen eksempler på informasjonssystemer er sosiale medier som
+              Facebook eller X (Twitter), SAP ERP-systemer eller kunderegistre
+              for små bedrifter. <a href="kilder.html">(Zwass, 2024)</a>
+            </p>
+
+            <h2>Typer informasjonssystemer</h2>
+            <p>Informasjonssystemer kan deles inn i to hovedtyper:</p>
+            <ul>
+              <li>
+                <strong>COTS (Commercial of-the-shelf):</strong> Programvare
+                laget og vedlikeholdt av en tredjepart som kan kjøpes eller
+                leies. Brukeren er ansvarlig for å installere og konfigurere
+                systemet.
+                <a href="kilder.html">(Baecke, 2020)</a>
+              </li>
+              <li>
+                <strong>SaaS (Software as a Service):</strong> Programvare
+                levert som en tjeneste der kunden betaler for bruken. En
+                tredjepart håndterer administrasjon og vedlikehold.<a
+                  href="kilder.html"
+                >
+                  (Baecke, 2020)</a
+                >
+              </li>
+            </ul>
+
+            <h2>Hva er systemutvikling?</h2>
+            <p>
+              Systemutvikling innebærer å lage, forbedre og vedlikeholde
+              informasjonssystemer. Disse systemene kan variere fra enkle
+              applikasjoner for IoT-enheter til komplekse IT-infrastrukturer.
+              Målet er å sikre pålitelighet, effektivitet og brukervennlighet.
+            </p>
+            <p>
+              Metodene for systemutvikling inkluderer strukturerte prosesser,
+              teknikker og verktøy som brukes i planlegging, design,
+              implementasjon, testing og vedlikehold.
+              <a href="kilder.html">(Dingsøyr, 2024)</a>
+            </p>
+            <p>
+              Noen eksempler på informasjonssystemer er sosiale medier som
+              Facebook eller X (Twitter), SAP ERP-systemer eller kunderegistre
+              for små bedrifter. <a href="kilder.html">(Zwass, 2024)</a>
+            </p>
+
+            <h2>Typer informasjonssystemer</h2>
+            <p>Informasjonssystemer kan deles inn i to hovedtyper:</p>
+            <ul>
+              <li>
+                <strong>COTS (Commercial of-the-shelf):</strong> Programvare
+                laget og vedlikeholdt av en tredjepart som kan kjøpes eller
+                leies. Brukeren er ansvarlig for å installere og konfigurere
+                systemet.
+                <a href="kilder.html">(Baecke, 2020)</a>
+              </li>
+              <li>
+                <strong>SaaS (Software as a Service):</strong> Programvare
+                levert som en tjeneste der kunden betaler for bruken. En
+                tredjepart håndterer administrasjon og vedlikehold.
+                <a href="kilder.html">(Baecke, 2020)</a>
+              </li>
+            </ul>
+
+            <h2>Hva er systemutvikling?</h2>
+            <p>
+              Systemutvikling innebærer å lage, forbedre og vedlikeholde
+              informasjonssystemer. Disse systemene kan variere fra enkle
+              applikasjoner for IoT-enheter til komplekse IT-infrastrukturer.
+              Målet er å sikre pålitelighet, effektivitet og brukervennlighet.
+            </p>
+            <p>
+              Metodene for systemutvikling inkluderer strukturerte prosesser,
+              teknikker og verktøy som brukes i planlegging, design,
+              implementasjon, testing og vedlikehold.
+              <a href="kilder.html">(Dingsøyr, 2024)</a>
+            </p>
+            <div>
+              <div class="previous-page-container">
+                <a
+                  href="prosjektledelse_og_prosjektarbeid.html"
+                  class="previous-button"
+                  >Previous Page</a
+                >
+              </div>
+              <div class="next-page-container">
+                <a href="tradisjonelle_metoder.html" class="next-button"
+                  >Next Page</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Side-navigasjon -->
+      <aside class="side-nav">
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li>
+            <details open="">
+              <summary class="summary">
+                Prosjektarbeid og prosjektledelse
+              </summary>
+              <ul>
+                <li>
+                  <a href="prosjektledelse_og_prosjektarbeid.html"
+                    >Introduksjon</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Systemutvikling</summary>
+              <ul>
+                <li><a href="systemutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="tradisjonelle_metoder.html"
+                    >Tradisjonelle metoder</a
+                  >
+                </li>
+                <li><a href="agile_metoder.html">Agile metoder</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Webutvikling</summary>
+              <ul>
+                <li><a href="webutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="fase1.html">Fase 1: Analysere og forstå</a>
+                </li>
+                <li>
+                  <a href="fase2.html">Fase 2: Designe og utforske</a>
+                </li>
+                <li><a href="fase3.html">Fase 3: Implementere</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="kilder.html"><strong>Kilder</strong></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <script src="../js/scripts.js"></script>
+    <footer>
+      <p class="footer">&copy; 2024. Gruppe 13.</p>
+    </footer>
+  </body>
+</html>

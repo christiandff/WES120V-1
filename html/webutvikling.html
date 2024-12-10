@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webutvikling</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Navigasjons menyen på toppen -->
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="../index.html" class="logo"
+          >Webutvikling</a >
+      </h1>
+      <ul class="nav-menu">
+        <li><a href="prosjektledelse_og_prosjektarbeid.html">Prosjektledelse og Prosjektarbeid</a></li>
+        <li><a href="systemutvikling.html">Systemutvikling</a></li>
+        <li><a href="webutvikling.html">Webutvikling og Ux</a></li>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <!-- Star wars kappene -->
+      <div class="theme-buttons">
+        <audio
+          id="lightsaberOffSound"
+          src="../assets/Lightsaber off sound effects.mp3"
+          preload="auto"
+        ></audio>
+        <audio
+          id="lightsaberOnSound"
+          src="../assets/Lightsaber Turn On - Sound Effect From Star Wars.mp3"
+          preload="auto"
+        ></audio>
+        <button id="normalModeButton" class="theme-button">Normal</button>
+        <button id="starWarsModeButton" class="theme-button">Star Wars</button>
+      </div>
+    </nav>
+
+    <!-- Hovedinnholdet -->
+    <div class="main-container">
+      <main class="content-container">
+        <section class="reading-content">
+          <!--Star wars crawl animasjon, gjør at teksten blir sendt oppover som i star wars filmene. Når animasjonen er fullført vises ikke innholdet lenger.
+          Blir gjort ved hjelp av CSS-->
+          <div class="crawl">
+          <h2>Hva er egentlig webutvikling?</h2>
+          <img src="../assets/webdev.png" alt="Illustrasjon av webdev" class="webdev-bilde" />
+          <p>
+            Webutvikling er kort fortalt utvikling og vedlikehold av nettsider.
+            Vi pleier som regel å dele webutvikling inn i to deler, front-end og
+            back-end utvikling.
+          </p>
+
+          <h3>Front-end Utvikling</h3>
+          <p>
+            Front-end utvikling går ut på å skape det vi ser når vi går inn på
+            en nettside, dette er alt fra teksten og innholdet, til fargene,
+            animasjonene og den generelle brukeropplevelsen. Til front-end
+            utvikling er det veldig vanlig å bruke programmeringsspråk som HTML,
+            CSS og Javascript <a href="kilder.html">(W3Schools, 2024).</a>
+          </p>
+          <p>
+            Det er også veldig vanlig å bruke andre plattformer som WordPress,
+            som er en veldig ikke-teknisk utviklingsplattform, og React, som er
+            et JavaScript-bibliotek som er blitt veldig populært i webutvikling.
+          </p>
+
+          <h3>Back-end Utvikling</h3>
+          <p>
+            Back-end utvikling går mer på det man ikke ser på en nettside. Dette
+            er altså alt som skjer på baksiden av nettsiden som
+            serverhåndtering, behandling av forespørsler og lagring av dataen
+            som blir sendt på nettsiden. Et godt eksempel på back-end er for
+            eksempel at en nettside husker brukeren din, og hvor du sist slapp
+            av etter innlogging med riktig innloggingsinformasjon. Til back-end
+            utvikling er det veldig vanlig å bruke programmeringsspråk som SQL,
+            Java, Python og PHP <a href="kilder.html">(W3Schools, 2024).</a>
+          </p>
+
+          <h3>Viktigheten av Tilgjengelighet</h3>
+          <p>
+            Webutvikling går mye ut på å skape en god brukeropplevelse for alle
+            personer som bruker nettsiden. For at nettsiden skal fungere for
+            flest mulig folk, inkludert de med funksjonsnedsettelser, er det
+            viktig å gjøre nøye gjennomtenkte design. Mange nettsider går
+            gjennom en WCAG (Web Content Accessibility Guidelines) test. Dette
+            er en test utviklet av W3C som hjelper utviklere med å sikre at
+            nettsiden er best mulig tilpasset alle, selv de med
+            funksjonsnedsettelser, ved å følge noen retningslinjer <a href="kilder.html">(W3C, 2023).</a>
+          </p>
+
+          <h3>Brukertesting og Forbedring</h3>
+          <p>
+            Når man konstruerer nettsider, er det vanlig å få tunnelsyn; som
+            utvikleren av nettsiden har man full forståelse av hvor alt ligger,
+            hvordan man skal orientere seg, og synes valgene av bilder og farger
+            er gode. Men selv om man tenker dette selv, stemmer ikke alltid det,
+            så hvordan kan man være sikker på at nettsiden man har lagd fungerer
+            bra for folk flest?
+          </p>
+          <p>
+            Dette kan lettest gjøres gjennom brukertesting. Der lar utvikleren
+            målgruppen få teste og kjøre gjennom nettsiden. Utvikleren tar
+            notater og videreutvikler og forbedrer nettsiden basert på
+            tilbakemeldingene. Slik sørger man for å få en best mulig nettside.
+          </p>
+
+          <h3>Faser i Webutvikling</h3>
+          <p>
+            Webutvikling er også vanlig å splitte inn i tre forskjellige faser:
+            analyse og forstå, design og utforske, og implementering. Vi skal nå
+            se videre på disse tre fasene.
+          </p>
+          <div class="previous-page-container">
+            <a href="tradisjonelle_metoder.html" class="previous-button"
+              >Previous Page</a
+            >
+          </div>
+          <div class="next-page-container">
+            <a href="fase1.html" class="next-button">Next Page</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Navigasjons menyen til høyre -->
+      <aside class="side-nav">
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li>
+            <details open="">
+              <summary class="summary">Prosjektarbeid og prosjektledelse</summary>
+              <ul>
+                <li>
+                  <a href="prosjektledelse_og_prosjektarbeid.html"
+                    >Introduksjon</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Systemutvikling</summary>
+              <ul>
+                <li><a href="systemutvikling.html">Introduksjon</a></li>
+                <li> <a href="tradisjonelle_metoder.html">Tradisjonelle metoder</a></li>
+                <li><a href="agile_metoder.html">Agile metoder</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Webutvikling</summary>
+              <ul>
+                <li><a href="webutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="fase1.html">Fase 1: Analysere og forstå</a>
+                </li>
+                <li>
+                  <a href="fase2.html">Fase 2: Designe og utforske</a>
+                </li>
+                <li><a href="fase3.html">Fase 3: Implementere</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="kilder.html"><strong>Kilder</strong></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer">&copy; 2024. Gruppe 13.</p>
+    </footer>
+  </body>
+</html>

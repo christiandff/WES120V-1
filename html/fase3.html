@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fase 3</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Navigasjonsmeny -->
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="../index.html" class="logo"
+          >Fase 3</a >
+      </h1>
+      <ul class="nav-menu">
+        <li><a href="prosjektledelse_og_prosjektarbeid.html">Prosjektledelse og Prosjektarbeid</a></li>
+        <li><a href="systemutvikling.html">Systemutvikling</a></li>
+        <li><a href="webutvikling.html">Webutvikling og Ux</a></li>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <!-- Star wars kappene -->
+      <div class="theme-buttons">
+        <audio
+          id="lightsaberOffSound"
+          src="../assets/Lightsaber off sound effects.mp3"
+          preload="auto"
+        ></audio>
+        <audio
+          id="lightsaberOnSound"
+          src="../assets/Lightsaber Turn On - Sound Effect From Star Wars.mp3"
+          preload="auto"
+        ></audio>
+        <button id="normalModeButton" class="theme-button">Normal</button>
+        <button id="starWarsModeButton" class="theme-button">Star Wars</button>
+      </div>
+    </nav>
+
+    <!-- Hovedinnhold -->
+    <div class="main-container">
+      <main class="content-container">
+        <section class="reading-content">
+          <!--Star wars crawl animasjon, gjør at teksten blir sendt oppover som i star wars filmene. Når animasjonen er fullført vises ikke innholdet lenger.
+          Blir gjort ved hjelp av CSS-->
+          <div class="crawl">
+          <h2>Fase 3: Virkeliggjøre</h2>
+          <img src="../assets/fase_3.jpg" alt="Illustrasjon av Fase 3" class="fase3-bilde" />
+          <p>
+            I denne fasen har vi som mål å virkeliggjøre og implementere
+            prosjektet vårt med HTML og CSS, gjennom designvalg som ble gjort i
+            fase 2.
+          </p>
+
+          <h3>HTML</h3>
+          <p>
+            HTML står for «HyperText Markup Language» og er et kodespråk man
+            bruker for å konstruere og utvikle en nettside. HTML har kun til
+            hensikt å fortelle nettlesere som Google Chrome, Safari, Opera, etc.
+            hva som er innholdet på nettsiden. Kodespråket tar i bruk såkalte
+            tagger som blir brukt til å gi teksten struktur og brukes til å gi
+            kontekst til hva som skjer i koden. Eksempler på disse taggene kan
+            være <code>&lt;header&gt;</code> eller
+            <code>&lt;nav&gt;</code> <a href="kilder.html">(Nätt, 2024)</a>. Vist i eksemplet under har vi
+            vist et utdrag av hvordan HTML-kode vil se ut.
+          </p>
+
+          <h3>CSS</h3>
+          <p>
+            CSS er et stilsett for HTML-kode på nettet. CSS står for alt av
+            detaljer, som farger, enkle animasjoner, utforming, skrifttyper,
+            layout osv. CSS er viktig ettersom det gir nettsider sjel og sørger
+            for at alle sidene på en nettside ser like ut. Dette fungerer godt
+            for større nettsider, da man kan beholde tema og utforming på tvers
+            av sidene. CSS fungerer ved å ta HTML-tagger og gi dem karakter og
+            utforming slik at nettsiden ser bedre ut <a href="kilder.html">(Nätt, 2024).</a>
+          </p>
+
+          <!--Kode inspirtert av https://www.geeksforgeeks.org/how-to-make-live-coding-editor-using-html-css-and-javascript/ -->
+          <h2>Prøv HTML og CSS-kode</h2>
+          <br />
+          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <!-- HTML Editor på nettsiden -->
+            <div style="flex: 1; min-width: 45%">
+              <h3>HTML</h3>
+              <label for="html-editor">HTML Editor:</label>
+              <textarea
+                id="html-editor"
+                rows="10"
+                style="width: 100%; font-family: monospace"
+              >
+          <h3>Hei verden!</h3>
+          <p>Dette er html kode.</p>
+              </textarea>
+            </div>
+
+            <!-- CSS Editor -->
+            <div style="flex: 1; min-width: 45%">
+              <h3>CSS</h3>
+              <label for="css-editor">CSS Editor:</label>
+              <textarea
+                id="css-editor"
+                rows="10"
+                style="width: 100%; font-family: monospace"
+              >
+            h1 {
+            color: blue;
+          }
+          
+          p {
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+          }
+              </textarea>
+            </div>
+          </div>
+
+          <!-- Se resultat knapp -->
+          <div style="margin-top: 10px">
+            <button
+              onclick="updatePreview()"
+              style="
+                padding: 10px 20px;
+                background-color: #0d47a1;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              "
+            >
+              Se resultat
+            </button>
+          </div>
+
+          <!-- viser i Iframe -->
+          <iframe
+            id="preview"
+            style="
+              width: 100%;
+              height: 300px;
+              border: 1px solid #ccc;
+              margin-top: 10px;
+            "
+          ></iframe>
+
+          <h3>Backend</h3>
+          <p>
+            Backend-utvikling er den delen av koden vi som vanlige webbrukere
+            ikke ser. Dette er delen av utviklingen som håndterer databaser,
+            tunge kalkulasjoner og lagring av informasjon som
+            innloggingsinformasjon og brukerdata. Frontend-utviklingen, som
+            består av HTML og CSS, er ofte adskilt fra backend-utviklingen, som
+            gjerne er skrevet i språk som Java, SQL eller Python (Vihovde,
+            2020). Frontend og backend kommuniserer gjennom et API («Application
+            Programming Interface»), som er et grensesnitt som forenkler
+            kommunikasjon av data og funksjonalitet <a href="kilder.html">(Vihovde, 2020).</a>
+          </p>
+
+          <h3>Testing</h3>
+          <p>
+            Testing er en essensiell del av implementeringsfasen for å finne ut
+            hvor godt produktet fungerer. Det er viktig for validering og for å
+            sikre at funksjoner og design fungerer som de skal. Vi deler gjerne
+            opp testing i formativ og summativ evaluering <a href="kilder.html">(Sandnes, 2018, s.
+            292).</a>
+          </p>
+          <ul>
+            <li>
+              <strong>Formativ evaluering:</strong> Gjøres under utviklingen for
+              å sikre at funksjonene implementeres riktig. Småjusteringer er
+              enkle å gjennomføre i denne fasen.
+            </li>
+            <li>
+              <strong>Summativ evaluering:</strong> Utføres mot slutten av
+              utviklingen, når produktet er nesten ferdig. Her kontrollerer vi
+              helheten og sørger for at alt fungerer som det skal før
+              godkjenning.
+            </li>
+          </ul>
+          <br>
+          <p>
+            Underveis i utviklingsprosessen har vi også alfa- og betatesting.
+            Alfa-testing utføres når produktet ikke er helt ferdig, mens
+            betatesting utføres på et mer komplett, men fortsatt uferdig
+            produkt. Jo senere i utviklingen feil rettes, jo større blir
+            kostnadene. Derfor er det viktig med tidlig testing for å redusere
+            utgifter og arbeidet mot slutten <a href="kilder.html">(Sandnes, 2018, s. 292).</a>
+          </p>
+          <div class="previous-page-container">
+            <a href="fase2.html" class="previous-button">Previous Page</a>
+          </div>
+          <div class="next-page-container">
+            <a href="quiz.html" class="next-button">Klar for quiz?</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Side-navigasjon -->
+      <aside class="side-nav">
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li>
+            <details open="">
+              <summary class="summary">Prosjektarbeid og prosjektledelse</summary>
+              <ul>
+                <li>
+                  <a href="prosjektledelse_og_prosjektarbeid.html"
+                    >Introduksjon</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Systemutvikling</summary>
+              <ul>
+                <li><a href="systemutvikling.html">Introduksjon</a></li>
+                <li> <a href="tradisjonelle_metoder.html">Tradisjonelle metoder</a></li>
+                <li><a href="agile_metoder.html">Agile metoder</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Webutvikling</summary>
+              <ul>
+                <li><a href="webutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="fase1.html">Fase 1: Analysere og forstå</a>
+                </li>
+                <li>
+                  <a href="fase2.html">Fase 2: Designe og utforske</a>
+                </li>
+                <li><a href="fase3.html">Fase 3: Implementere</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="kilder.html"><strong>Kilder</strong></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <script src="../js/scripts.js"></script>
+    <footer>
+      <p class="footer">&copy; 2024. Gruppe 13.</p>
+    </footer>
+  </body>
+</html>

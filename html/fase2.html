@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fase 2</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Navigasjons menyen på toppen-->
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="../index.html" class="logo"
+          >Fase 2</a >
+      </h1>
+      <ul class="nav-menu">
+        <li><a href="prosjektledelse_og_prosjektarbeid.html">Prosjektledelse og Prosjektarbeid</a></li>
+        <li><a href="systemutvikling.html">Systemutvikling</a></li>
+        <li><a href="webutvikling.html">Webutvikling og Ux</a></li>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <!-- Star wars kappene -->
+      <div class="theme-buttons">
+        <audio
+          id="lightsaberOffSound"
+          src="../assets/Lightsaber off sound effects.mp3"
+          preload="auto"
+        ></audio>
+        <audio
+          id="lightsaberOnSound"
+          src="../assets/Lightsaber Turn On - Sound Effect From Star Wars.mp3"
+          preload="auto"
+        ></audio>
+        <button id="normalModeButton" class="theme-button">Normal</button>
+        <button id="starWarsModeButton" class="theme-button">Star Wars</button>
+      </div>
+    </nav>
+
+    <!-- Hovedinnholdet -->
+    <div class="main-container">
+      <main class="content-container">
+        <section class="reading-content">
+          <!--Star wars crawl animasjon, gjør at teksten blir sendt oppover som i star wars filmene. Når animasjonen er fullført vises ikke innholdet lenger.
+          Blir gjort ved hjelp av CSS-->
+          <div class="crawl">
+          <h2>Fase 2: Designe og Utforske</h2>
+          <img src="../assets/fase_2.jpg" alt="Illustrasjon av Fase 2" class="fase2-bilde" />
+          <p>
+            I fase 2 av webutvikling, bygger vi videre på de funnene og
+            informasjonen vi samlet i fase 1, og videreutvikler disse til å
+            skape førsteutkast og prototypen av nettsiden. Her har vi et stort
+            fokus på UX (User Experience), dette gjør vi gjennom å følge
+            standard og brukervennlige designvalg. Et eksempel på dette er valg
+            av logo i toppen av venstre hjørne, knapper til de forskjellige
+            seksjonene av nettsiden eller en eventuell søkefunksjon i headeren.
+            Dette er standard utforminger mange nettsider har, og er med på å
+            skape en trygghet og tillit blant brukerne.
+          </p>
+
+          <h3>Brukervennlighet</h3>
+          <p>
+            Brukervennlighet er et veldig sentralt tema i denne fasen. Vi kan se
+            på fem nøkkelpunkter for brukervennlighet: «For det første må et
+            system være lett å lære, det bør være effektivt å bruke, det må være
+            lett å huske over tid hvordan systemet brukes, systemet bør
+            minimalisere sjansen for feil og være tolerant for feil, og systemet
+            må være behagelig å bruke.» (Sandnes, 2018, s. 16). Brukervennlighet
+            skal altså være at systemet og nettsiden skal være enkelt håndterlig
+            for alle. Som nevnt i introduksjonssiden til webutvikling, snakket
+            vi om WCAG-valideringen. WCAG er en test og retningslinjer utviklere
+            må bruke for å sørge for at nettsiden er brukervennlig for alle,
+            selv de med funksjonsnedsettelser. I Norge er det faktisk lovpålagt
+            gjennom likestillings- og diskrimineringsloven at alle IKT-systemer
+            skal være likt for alle. Det er derfor lovpålagt at nettsystemer
+            skal tilfredsstille WCAG nivå 1 og 2. <a href="kilder.html">(Sandnes, 2018, s. 32-33).</a>
+          </p>
+
+          <h3>Papirprototyping</h3>
+          <p>
+            Papirprototyping er når man for hånd med penn og papir lager en
+            prototype av nettsiden. Her tegner man opp de forskjellige sidene,
+            slik at man raskt og enkelt kan teste utseendet på nettsiden uten å
+            måtte legge mye tid i det tekniske arbeidet med å kode den. Dette
+            grensesnittet kan oppnås på et par minutter, og det er veldig enkelt
+            å tegne et nytt ark om man er misfornøyd eller ser
+            forbedringspotensiale med en gang. Nettlesermalen gjør det veldig
+            enkelt i forbindelse med webutvikling, da man får en standard mal
+            for nettlesere som man kan tusje og tegne inn i for å prototype frem
+            ideen sin. <a href="kilder.html">(Sandnes, 2018, s. 270-271).</a>
+          </p>
+
+          <h3>Wireframes</h3>
+          <p>
+            Wireframes er et visuelt diagram av hvordan systemet skal se ut. Det
+            viser hvordan de ulike elementene forholder seg til hverandre og
+            hvordan det er strukturert. Det er med på å kartlegge hvordan siden
+            skal se ut uten å gå altfor mye i detalj, siden det fokuserer mest
+            på funksjonaliteten. Wireframes er ofte brukt i overgangen fra idé
+            til endelig design. <a href="kilder.html">(Miro, u.å.).</a>
+          </p>
+
+          <h3>Brukertesting</h3>
+          <p>
+            Brukertesting handler om å innhente tilbakemeldinger fra brukerne om
+            designet og utformingen av systemet. Her skal brukeren gi sin ærlige
+            tilbakemelding om hva de syntes fungerer, hva som ikke fungerer,
+            hvor lett det er å bruke det, etc. Her er det også viktig å fokusere
+            på bruken brukeren gjør, og ikke bare hva de tenker og mener om
+            produktet. Vi er ikke ute etter hva deres personlige meninger er om
+            produktet, men heller hvordan det er for dem å bruke det, og hvilke
+            utfordringer de eventuelt har opplevd med det. <a href="kilder.html">(Sandnes, 2018, s.
+            291).</a>
+          </p>
+          <div class="previous-page-container">
+            <a href="fase1.html" class="previous-button">Previous Page</a>
+          </div>
+          <div class="next-page-container">
+            <a href="fase3.html" class="next-button">Next Page</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Navigasjons menyen til høyre -->
+      <aside class="side-nav">
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li>
+            <details open="">
+              <summary class="summary">Prosjektarbeid og prosjektledelse</summary>
+              <ul>
+                <li>
+                  <a href="prosjektledelse_og_prosjektarbeid.html"
+                    >Introduksjon</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Systemutvikling</summary>
+              <ul>
+                <li><a href="systemutvikling.html">Introduksjon</a></li>
+                <li> <a href="tradisjonelle_metoder.html">Tradisjonelle metoder</a></li>
+                <li><a href="agile_metoder.html">Agile metoder</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Webutvikling</summary>
+              <ul>
+                <li><a href="webutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="fase1.html">Fase 1: Analysere og forstå</a>
+                </li>
+                <li>
+                  <a href="fase2.html">Fase 2: Designe og utforske</a>
+                </li>
+                <li><a href="fase3.html">Fase 3: Implementere</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="kilder.html"><strong>Kilder</strong></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer">&copy; 2024. Gruppe 13.</p>
+    </footer>
+  </body>
+</html>

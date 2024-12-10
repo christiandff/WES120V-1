@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tradisjonelle metoder</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Navigasjons menyen på toppen -->
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="../index.html" class="logo"
+          >Tradisjonelle metoder</a >
+      </h1>
+      <ul class="nav-menu">
+        <li><a href="prosjektledelse_og_prosjektarbeid.html">Prosjektledelse og Prosjektarbeid</a></li>
+        <li><a href="systemutvikling.html">Systemutvikling</a></li>
+        <li><a href="webutvikling.html">Webutvikling og Ux</a></li>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <!-- Star wars kappene -->
+      <div class="theme-buttons">
+        <audio
+          id="lightsaberOffSound"
+          src="../assets/Lightsaber off sound effects.mp3"
+          preload="auto"
+        ></audio>
+        <audio
+          id="lightsaberOnSound"
+          src="../assets/Lightsaber Turn On - Sound Effect From Star Wars.mp3"
+          preload="auto"
+        ></audio>
+        <button id="normalModeButton" class="theme-button">Normal</button>
+        <button id="starWarsModeButton" class="theme-button">Star Wars</button>
+      </div>
+    </nav>
+
+    <!-- Hovedinnholdet -->
+    <div class="main-container">
+      <main class="content-container">
+        <section class="reading-content">
+          <!--Star wars crawl animasjon, gjør at teksten blir sendt oppover som i star wars filmene. Når animasjonen er fullført vises ikke innholdet lenger.
+          Blir gjort ved hjelp av CSS-->
+          <div class="crawl">
+          <h2>Hva er en metode?</h2>
+          <img src="../assets/waterfall.jpg" alt="Illustrasjon av water" class="was-bilde" />
+          <p>
+            Systemutviklingsmetoder er strukturerte tilnærminger som brukes i
+            planlegging, design, utvikling, testing og vedlikehold av
+            informasjonssystemer. Disse metodene gir et rammeverk og veiledning
+            for hvordan man kan gjennomføre et utviklingsprosjekt for å sikre
+            effektivitet, kvalitet og en god leveranse som oppfyller kravene til
+            kunden. <a href="kilder.html">(Avison & Fitzgerald, 2003, ss. 19-22)</a>
+          </p>
+          <p>
+            Det finnes hovedsakelig to typer metoder: strukturerte og smidige.
+          </p>
+
+          <h2>Strukturerte metoder</h2>
+          <p>
+            Strukturerte metoder er tradisjonelle systemutviklingsmetoder som
+            følger en lineær, sekvensiell tilnærming til utviklingsprosessen.
+            Disse metodene er preget av en klar, fasebasert struktur som legger
+            vekt på grundig planlegging og dokumentasjon. Et eksempel på en
+            strukturert metode er fossefallsmetoden. <a href="kilder.html">(Kendall & Kendall, 2020,
+            ss. 42-46)</a>
+          </p>
+
+          <h2>Fossefallsmetoden</h2>
+          <p>
+            Fossefallsmetoden, eller «Waterfall Model», er en av de mest kjente
+            tradisjonelle metodene. Den går ut på å definere fasene av
+            prosjektet før arbeidet starter, og deretter følge dem i en lineær
+            rekkefølge. Man kan vanligvis ikke gå tilbake til tidligere faser,
+            noe som gjør denne metoden lite fleksibel. Det er vanligvis sju
+            faser i fossefallsmetoden:
+          </p>
+          <ol>
+            <li>
+              <strong>Undersøke:</strong> Definere problemet og undersøke
+              informasjonsbehov og eksisterende systemer.
+            </li>
+            <li>
+              <strong>Analyse:</strong> Samle dokumentasjon om eksisterende
+              løsning og analysere behovene for det nye systemet.
+            </li>
+            <li>
+              <strong>Design:</strong> Utvikle en designprototype i samarbeid
+              med sluttbrukerne.
+            </li>
+            <li>
+              <strong>Utvikling:</strong> Ferdigstille systemet gjennom flere
+              aktiviteter.
+            </li>
+            <li>
+              <strong>Implementering:</strong> Lansere produktet ved bruk av
+              strategier som big bang, parallelle systemer, innfasing eller
+              pilotimplementering.
+            </li>
+            <li>
+              <strong>Vedlikehold:</strong> Overvåke, evaluere, reparere og
+              forbedre systemet gjennom hele levetiden.
+            </li>
+            <li>
+              <strong>Avslutning:</strong> Planlegge utfasing eller erstatning
+              av systemet når det ikke lenger er lønnsomt å støtte det.
+            </li>
+          </ol>
+
+          <div class="previous-page-container">
+            <a href="systemutvikling.html" class="previous-button"
+              >Previous Page</a
+            >
+          </div>
+          <div class="next-page-container">
+            <a href="agile_metoder.html" class="next-button">Next Page</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Navigasjons menyen til høyre -->
+      <aside class="side-nav">
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li>
+            <details open="">
+              <summary class="summary">Prosjektarbeid og prosjektledelse</summary>
+              <ul>
+                <li>
+                  <a href="prosjektledelse_og_prosjektarbeid.html"
+                    >Introduksjon</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Systemutvikling</summary>
+              <ul>
+                <li><a href="systemutvikling.html">Introduksjon</a></li>
+                <li> <a href="tradisjonelle_metoder.html">Tradisjonelle metoder</a></li>
+                <li><a href="agile_metoder.html">Agile metoder</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Webutvikling</summary>
+              <ul>
+                <li><a href="webutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="fase1.html">Fase 1: Analysere og forstå</a>
+                </li>
+                <li>
+                  <a href="fase2.html">Fase 2: Designe og utforske</a>
+                </li>
+                <li><a href="fase3.html">Fase 3: Implementere</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="kilder.html"><strong>Kilder</strong></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer">&copy; 2024. Gruppe 13.</p>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fase 1</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Navigasjons menyen på toppen-->
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="../index.html" class="logo"
+          >Fase 1</a >
+      </h1>
+      <ul class="nav-menu">
+        <li><a href="prosjektledelse_og_prosjektarbeid.html">Prosjektledelse og Prosjektarbeid</a></li>
+        <li><a href="systemutvikling.html">Systemutvikling</a></li>
+        <li><a href="webutvikling.html">Webutvikling og Ux</a></li>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <!-- Star wars kappene -->
+      <div class="theme-buttons">
+        <audio
+          id="lightsaberOffSound"
+          src="../assets/Lightsaber off sound effects.mp3"
+          preload="auto"
+        ></audio>
+        <audio
+          id="lightsaberOnSound"
+          src="../assets/Lightsaber Turn On - Sound Effect From Star Wars.mp3"
+          preload="auto"
+        ></audio>
+        <button id="normalModeButton" class="theme-button">Normal</button>
+        <button id="starWarsModeButton" class="theme-button">Star Wars</button>
+      </div>
+    </nav>
+
+    <!-- Hovedinnholdet -->
+    <div class="main-container">
+      <main class="content-container">
+        <section class="reading-content">
+          <!--Star wars crawl animasjon, gjør at teksten blir sendt oppover som i star wars filmene. Når animasjonen er fullført vises ikke innholdet lenger.
+          Blir gjort ved hjelp av CSS-->
+          <div class="crawl">
+          <h2>Fase 1</h2>
+          <img src="../assets/Intervju.jpg" alt="Illustrasjon av Fase 1" class="fase1-bilde" />
+          <p>
+            Fase 1 i utviklingsprosessen er analyse/forstå-delen. I denne delen
+            skal vi forstå hva slags problem det er vi prøver å løse og for hvem
+            dette problemet er. Hvem er det vi retter produktet vårt mot, hvem
+            skal bruke det, og hva er målgruppen. Dette er alle relevante
+            spørsmål vi må stille oss til fase 1.
+          </p>
+
+          <h3>Behovsanalyse</h3>
+          <p>
+            Behovsanalyse er en måte å innhente dypere forståelse av brukerens
+            behov og ønsker for programmet. Behovsanalyse handler om å samle inn
+            informasjon som er nødvendig for å kunne konstruere et
+            brukergrensesnitt. I behovsanalysen samler vi inn informasjon
+            gjennom flere forskjellige aktiviteter som intervjuer, fokusgrupper,
+            spørreundersøkelser, kulturelle prober, miljøanalyse og rollespill,
+            for å prøve å skape en helhetlig forståelse av oppdraget og målet.
+            Man har som formål å prøve å bli kjent med brukerne og deres
+            tilbakemeldinger på produktet. <a href="kilder.html#sandnes">(Sandnes, 2018, s. 218 - 219)</a>
+
+
+          <h3>Intervjuer</h3>
+          <p>
+            Intervjuer brukes gjerne i de første innledende fasene av
+            prosjektet. Intervjuer kan enten være åpne og ukontrollerte, hvor
+            samtalen flyter fritt, eller mer kontrollerte, hvor intervjuer har
+            mer spesifikke avgrensinger og prøver å hente ut hva brukeren tenker
+            om spesifikke ting. De åpne intervjuene går mye bredere ut der målet
+            er å la samtalen flyte og prøve å fiske etter relevant informasjon.
+            Lukkede intervjuer går mer i dybden, der intervjueren har spesifikke
+            og konkrete mål for hva brukeren skal svare på. Dette er bra for å
+            effektivisere intervjuet og få svar på spørsmålene man egentlig er
+            ute etter. <a href="kilder.html">Miro (u.å.)</a>
+          </p>
+
+          <h3>Spørreundersøkelser</h3>
+          <p>
+            Spørreundersøkelser er et verktøy man bruker for å samle inn
+            informasjon fra en stor mengde personer, der man ønsker å få inn en
+            stor mengde god informasjon og ikke har tid til å sitte og intervjue
+            enkeltpersoner. Før en spørreundersøkelse er det lurt å intervjue et
+            par personer for å få en generell retning og innsikt, slik at man
+            kan formulere gode spørsmål til det man ønsker å få vite av en
+            større gruppe. Spørreundersøkelser har ofte lukkede spørsmål, for
+            eksempel en rating fra 1-5 eller ja/nei-spørsmål, da vi ønsker å få
+            data som er lett å sammenligne og analysere. Det er viktig at
+            spørsmålene er enkle å forstå, slik at folk ikke blir begrenset av
+            kunnskapsnivå. <a href="kilder.html">(Sandnes, 2018, s. 225 - 227)</a>
+          </p>
+
+          <h3>Persona</h3>
+          <p>
+            Persona er en fiktiv person man skaper i forbindelse med fase 1 i en
+            utviklingsprosess. Persona går ut på å skape en person med navn,
+            alder, yrke, datakompetanse, sivilstatus og utdanningsnivå. Personas
+            er med på å skape en typisk bruker, som utviklere og designere kan
+            bruke for å visualisere brukeren og forstå de reelle problemene de
+            kan få. Man skaper gjerne spesifikke scenarioer der personaen skal
+            bruke produktet, noe som hjelper utvikleren med å se det fra deres
+            ståsted. <a href="kilder.html">(Sandnes, 2018, s. 258 - 259)</a>
+          </p>
+
+          <h3>User Stories</h3>
+          <p>
+            User stories er en beskrivelse av hvordan funksjonene til systemet
+            skal fungere sett fra brukerens perspektiv. Den består av tre
+            elementer: brukeren, behovet og målet. Et eksempel er «Som student
+            ønsker jeg tilgang til tidligere eksamensoppgaver, slik at jeg kan
+            se hva som er forventet på eksamen». User stories er ofte veldig
+            korte og fokuserer som regel på én funksjon. <a href="kilder.html">.Atlassian (n.d.)</a>.
+          </p>
+          <div class="previous-page-container">
+            <a href="webutvikling.html" class="previous-button"
+              >Previous Page</a
+            >
+          </div>
+          <div class="next-page-container">
+            <a href="fase2.html" class="next-button">Next Page</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Navigasjons menyen til høyre-->
+      <aside class="side-nav">
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li>
+            <details open="">
+              <summary class="summary">Prosjektarbeid og prosjektledelse</summary>
+              <ul>
+                <li>
+                  <a href="prosjektledelse_og_prosjektarbeid.html"
+                    >Introduksjon</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Systemutvikling</summary>
+              <ul>
+                <li><a href="systemutvikling.html">Introduksjon</a></li>
+                <li> <a href="tradisjonelle_metoder.html">Tradisjonelle metoder</a></li>
+                <li><a href="agile_metoder.html">Agile metoder</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Webutvikling</summary>
+              <ul>
+                <li><a href="webutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="fase1.html">Fase 1: Analysere og forstå</a>
+                </li>
+                <li>
+                  <a href="fase2.html">Fase 2: Designe og utforske</a>
+                </li>
+                <li><a href="fase3.html">Fase 3: Implementere</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="kilder.html"><strong>Kilder</strong></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!--Footer en-->
+    <footer>
+      <p class="footer">&copy; 2024. Gruppe 13.</p>
+    </footer>
+  </body>
+</html>

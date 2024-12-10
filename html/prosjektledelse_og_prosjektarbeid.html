@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjektledelse og Prosjektarbeid</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Navigasjons menyen på toppen -->
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="../index.html" class="logo"
+          >Prosjektledelse og Prosjektarbeid</a
+        >
+      </h1>
+      <ul class="nav-menu">
+        <li><a href="prosjektledelse_og_prosjektarbeid.html">Prosjektledelse og Prosjektarbeid</a></li>
+        <li><a href="systemutvikling.html">Systemutvikling</a></li>
+        <li><a href="webutvikling.html">Webutvikling og Ux</a></li>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <!-- Star wars kappene -->
+      <div class="theme-buttons">
+        <audio
+          id="lightsaberOffSound"
+          src="../assets/Lightsaber off sound effects.mp3"
+          preload="auto"
+        ></audio>
+        <audio
+          id="lightsaberOnSound"
+          src="../assets/Lightsaber Turn On - Sound Effect From Star Wars.mp3"
+          preload="auto"
+        ></audio>
+        <button id="normalModeButton" class="theme-button">Normal</button>
+        <button id="starWarsModeButton" class="theme-button">Star Wars</button>
+      </div>
+    </nav>
+
+    <!-- Hovedinnholdet -->
+    <div class="main-container">
+      <main class="content-container">
+        <section class="reading-content">
+          <!--Star wars crawl animasjon, gjør at teksten blir sendt oppover som i star wars filmene. Når animasjonen er fullført vises ikke innholdet lenger.
+          Blir gjort ved hjelp av CSS-->
+          <div class="crawl">
+            <h1>Prosjektledelse og Prosjektarbeid</h1>
+            <img
+              src="../assets/prosjektled.jpg"
+              alt="Illustrasjon av prosjekt"
+              class="pro-bilde"
+            />
+            <p>
+              Prosjektledelse og prosjektarbeid er avgjørende for
+              gjennomføringen av prosjekter. Prosjektledelse handler om å kunne
+              lede og koordinere prosjekter fra startfasen til sluttfasen. Når
+              man skal jobbe med et prosjekt er det alltid lurt å opprette en
+              gruppekontrakt. Dette gjør man for å kunne opprettholde en best
+              mulig struktur og holdning blant folkene som jobber på prosjektet.
+              Det er en effektiv måte å få folk til å ta et prosjekt på alvor.
+            </p>
+
+            <h2>Fire hovedfaser</h2>
+            <p>
+              Vi deler ofte prosjektet inn i fire hovedfaser, her skal vi
+              fortelle litt om dem, og gi et eksempel for et
+              webutviklingsprosjekt.
+            </p>
+            <h3>1. Oppstart</h3>
+            <p>
+              Denne fasen handler om å sette rammene for og rundt prosjektet.
+              Her er det viktig at man definerer prosjektets formål, når det
+              skal starte og ikke minst når det skal avsluttes.
+              <br /><strong>Eksempel:</strong> I et webutviklingsprosjekt bruker
+              man gjerne denne delen til å gjennomføre en behovsanalyse for å
+              finne ut hva nettsiden skal inneholde og hvem som skal bruke den.
+            </p>
+            <h3>2. Planlegging</h3>
+            <p>
+              I denne fasen skal prosjektet brytes ned i konkrete oppgaver, hvor
+              det skal lages en detaljert plan for gjennomføringen. Denne delen
+              av prosjektets livssyklus er utrolig viktig ettersom det her er
+              man legger milepæler, finner ut hvem og hva man trenger for
+              prosjektet, hvilke risikoer man må tenke gjennom, og fordele alle
+              rollene i prosjektet.
+              <br /><strong>Eksempel:</strong> I et webutviklingsprosjekt skal
+              man da velge bruk av teknologi, som programmeringsspråk, samt
+              fordele arbeidsoppgaver mellom utviklere og prosjektlederen.
+            </p>
+            <h3>3. Gjennomføring</h3>
+            <p>
+              Dette er fasen hvor det faktiske arbeidet blir gjennomført. Her
+              skal prosjektleder sørge for at prosjektet er gående og at alt går
+              etter planen. Selv om man legger en flott plan og tror alt kommer
+              til å gå på skinner gjennom prosjektet, gjør det sjeldent faktisk
+              det. Derfor er det viktig å være forberedt på feil og være
+              løsningsorientert for å løse dem.
+              <br /><strong>Eksempel:</strong> I et webutviklingsprosjekt bruker
+              man denne delen for å utvikle nettsiden, style den opp og teste
+              den på ulike enheter.
+            </p>
+            <h3>4. Avslutning</h3>
+            <p>
+              I den siste fasen skal man avslutte prosjektet. Dette betyr at man
+              prioriterer å fullføre alle oppgavene, evaluerer prosjektets
+              suksess og lærdommer, og til slutt leverer det avsluttende
+              produktet til kunden.
+              <br /><strong>Eksempel:</strong> I et webutviklingsprosjekt bruker
+              man denne avsluttende delen for å teste etter feil og levere det
+              ferdige produktet til kunden.
+              <a href="kilder.html">(eStudie.no, n.d.)</a>
+            </p>
+
+            <h2>PRINCE2</h2>
+            <img
+              src="../assets/prince2.png"
+              alt="Illustrasjon av prince2"
+              class="prince2-bilde"
+            />
+            <p>
+              PRINCE2 står for Projects IN Controlled Environments, og er et
+              internasjonalt anerkjent rammeverk for prosjektledelse som sikrer
+              at prosjektet får god struktur og kontroll gjennom alle fasene.
+              Rammeverket er fleksibelt og kan brukes på alle slags prosjekter
+              uavhengig av størrelsen og kompleksiteten på prosjektet.
+            </p>
+            <h3>Syv prosesser i PRINCE2</h3>
+            <ol>
+              <li>Oppstart av prosjektet</li>
+              <li>Eierstyring av prosjektet</li>
+              <li>Initiere et prosjekt</li>
+              <li>Kontrollere en fase</li>
+              <li>Styre produktleveranser</li>
+              <li>Lede en faseovergang</li>
+              <li>Avslutte prosjektet</li>
+              <p>
+                <a href="kilder.html">(Store norske leksikon, 2024)</a>
+              </p>
+            </ol>
+            <p>
+              PRINCE2 gir en strukturert og kontrollert tilnærming til de fire
+              hovedfasene i prosjektarbeidet og er med på å sikre en vellykket
+              gjennomføring.
+            </p>
+
+            <h2>Oppsummering</h2>
+            <p>
+              Prosjektledelse og prosjektarbeid krever god struktur,
+              kommunikasjon og evne til å løse problemer med strak arm. Ved å
+              følge de fire nevnte fasene kan man sikre en god og ordentlig
+              gjennomføring av et prosjekt, og ved å ta i bruk PRINCE2 sikrer
+              man seg et detaljert rammeverk som sørger for kontroll og kvalitet
+              i hver fase.
+            </p>
+          </div>
+        </section>
+        <div class="next-page-container">
+          <a href="systemutvikling.html" class="button">Next Page</a>
+        </div>
+      </main>
+
+      <!-- Navigasjons menyen til høyre -->
+      <aside class="side-nav">
+        <ul>
+          <li><a href="../index.html">Hjem</a></li>
+          <li>
+            <details open="">
+              <summary class="summary">
+                Prosjektarbeid og prosjektledelse
+              </summary>
+              <ul>
+                <li>
+                  <a href="prosjektledelse_og_prosjektarbeid.html"
+                    >Introduksjon</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Systemutvikling</summary>
+              <ul>
+                <li><a href="systemutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="tradisjonelle_metoder.html"
+                    >Tradisjonelle metoder</a
+                  >
+                </li>
+                <li><a href="agile_metoder.html">Agile metoder</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details open="">
+              <summary class="summary">Webutvikling</summary>
+              <ul>
+                <li><a href="webutvikling.html">Introduksjon</a></li>
+                <li>
+                  <a href="fase1.html">Fase 1: Analysere og forstå</a>
+                </li>
+                <li>
+                  <a href="fase2.html">Fase 2: Designe og utforske</a>
+                </li>
+                <li><a href="fase3.html">Fase 3: Implementere</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="kilder.html"><strong>Kilder</strong></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer">&copy; 2024. Gruppe 13.</p>
+    </footer>
+  </body>
+</html>
